@@ -14,16 +14,16 @@ public class Constants {
             "southampton", "stornoway", "suttonbonington", "tiree", "valley", "waddington", "whitby", "wickairport", "yeovilton"
     );
 
-    public static String STATION = "STATION";
-    public static String YEAR = "YEAR";
-    public static String MONTH = "MONTH";
-    public static String MEAN_MAX_TEMPERATURE = "MEAN_MAX_TEMPERATURE";
-    public static String MEAN_MIN_TEMPERATURE = "MEAN_MIN_TEMPERATURE";
-    public static String DAYS_OF_AIR_FROST = "DAYS_OF_AIR_FROST";
-    public static String TOTAL_RAINFALL_MM = "TOTAL_RAINFALL_MM";
-    public static String TOTAL_SUNSHINE_HOURS = "TOTAL_SUNSHINE_HOURS";
+    public static final String STATION = "STATION";
+    public static final String YEAR = "YEAR";
+    public static final String MONTH = "MONTH";
+    private static final String MEAN_MAX_TEMPERATURE = "MEAN_MAX_TEMPERATURE";
+    private static final String MEAN_MIN_TEMPERATURE = "MEAN_MIN_TEMPERATURE";
+    private static final String DAYS_OF_AIR_FROST = "DAYS_OF_AIR_FROST";
+    public static final String TOTAL_RAINFALL_MM = "TOTAL_RAINFALL_MM";
+    public static final String TOTAL_SUNSHINE_HOURS = "TOTAL_SUNSHINE_HOURS";
 
-    public static List<String> COLUMN = Arrays.asList(
+    public static final List<String> COLUMN = Arrays.asList(
             STATION,
             YEAR,
             MONTH,

@@ -15,7 +15,7 @@ public class Client {
 
     private final File file;
 
-    private Logger LOGGER = LoggerFactory.getLogger(Client.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(Client.class);
 
     public Client(final File file) {
         this.file = file;

@@ -20,10 +20,10 @@ import static technical.exercise.constant.Constants.STATION_LIST;
 
 public class SparkProcessing {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(SparkProcessing.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SparkProcessing.class);
 
-    private static File file = file();
-    private static Client client = new Client(file);
+    private static final File file = file();
+    private static final Client client = new Client(file);
 
     private static File file() {
         final File file = createTempDir();
@@ -42,10 +42,8 @@ public class SparkProcessing {
         service.rankedByOnlineAge(ds);
         service.rankByRainfall(ds);
         service.rankBySunshine(ds);
-
-        //TODO
-//        service.worstRainfall(ds);
-//        service.bestSunshine(ds);
+        service.worstRainfall(ds);
+        service.bestSunshine(ds);
         service.averageRainfallForMay(ds);
 
         FileSystemUtils.deleteRecursively(file);
