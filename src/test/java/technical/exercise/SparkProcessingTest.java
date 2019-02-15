@@ -1,10 +1,11 @@
 package technical.exercise;
 
-import org.junit.jupiter.api.Test;
 
-class SparkProcessingTest {
+import org.junit.Test;
+
+public class SparkProcessingTest {
 
     @Test
-    void main() {
+    public void main() {
     }
 }

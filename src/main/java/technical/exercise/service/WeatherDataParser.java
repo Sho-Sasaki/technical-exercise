@@ -20,7 +20,8 @@ class WeatherDataParser {
                 .filter(isMetrics())
                 .map(String::trim)
                 .map(l -> l.replaceAll("\\s+", ",")         // separate to create csv file
-                        .replaceAll("[^(0-9.\\-,)]", ""))   // strip out special character
+                        .replaceAll("[^(0-9.\\-,)]", "")   // strip out special character
+                        .replaceAll(",*$", ""))
                 .map(l -> {
                     final String lineWithStationColumn = station + "," + l;
                     if (lineWithStationColumn.split(",").length != COLUMN.size()) {

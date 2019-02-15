@@ -1,19 +1,19 @@
 package technical.exercise.service;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 import static org.mockito.MockitoAnnotations.initMocks;
 
-class ClientTest {
+public class ClientTest {
 
-    @BeforeEach
-    void setUp() {
+    @Before
+    public void setUp() {
         initMocks(this);
     }
 
     @Test
-    void name() {
+    public void name() {
 
     }
 }
